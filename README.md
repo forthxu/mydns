@@ -172,3 +172,22 @@ N最多不超过63也就是2^6，因为最前面两位用来表示地址方式�
 界面截图：
 
 [![dns界面截图：](images/dns-forthxu.jpg "dns界面截图：")](images/dns-forthxu.jpg "dns界面截图")
+
+
+设计和实施 DNS 服务器和客户端服务时可能用到的RFC相关规范：
+RFC     标题
+RFC1034 域名 - 概念和工具
+RFC1035 域名 - 实现和规范
+RFC1123 Internet 主机 - 应用和支持的要求
+RFC1886 支持 IP 版本 6 的 DNS 扩展名
+RFC1995 DNS 中的增量区域传输
+RFC1996 提示通知区域更改的机制 (DNS NOTIFY)
+RFC2136 域名系统中的动态更新 (DNS UPDATE)
+RFC2181 对 DNS 规范的说明
+RFC2308 DNS 查询的负缓存 (DNS NCACHE)
+RFC2535 域名系统安全扩展 (DNSSEC)
+RFC2671 DNS 的扩展机制 (EDNS0)
+RFC2782 指定服务位置的 DNS RR (DNS SRV)
+RFC2930 DNS 的密钥建立 (TKEY RR)
+RFC3645 DNS (GSS-TSIG) 密钥事务身分验证的通用安全服务算法
+RFC3646 IPv6 (DHCPv6) 动态主机配置协议的 DNS 配置选项
