@@ -190,7 +190,19 @@ N最多不超过63也就是2^6，因为最前面两位用来表示地址方式�
 [![dns界面截图：](images/dns-forthxu.jpg "dns界面截图：")](images/dns-forthxu.jpg "dns界面截图")
 
 
-设计和实施 DNS 服务器和客户端服务时可能用到的RFC相关规范：
+## EDNS
+
+RFC2671 对DNS做了扩展。http://www.cnblogs.com/cobbliu/p/3188632.html
+
+使用dig命令查看EDNS扩展内容需要打补丁。http://www.jianshu.com/p/bd139f62fb99
+
+这里举个需求：
+
+CDN服务商通常通过域名请求者IP返回最近的节点，但CDN的DNS系统接收到的是PUBLIC DNS服务商的IP，并不能获取客户端的IP，这里就需要PUBLIC DNS服务商提供客户端IP。
+
+因此Google、 OpenDNS联合草拟了一个相关的RFC草案来达到这个目的。https://tools.ietf.org/html/draft-vandergaast-edns-client-ip-01
+
+## 设计和实施 DNS 服务器和客户端服务时可能用到的RFC相关规范：
 
 | RFC | 标题 |
 | ------------ | ------------ |
@@ -209,3 +221,5 @@ N最多不超过63也就是2^6，因为最前面两位用来表示地址方式�
 | RFC2930 | DNS 的密钥建立 (TKEY RR) |
 | RFC3645 | DNS (GSS-TSIG) 密钥事务身分验证的通用安全服务算法 |
 | RFC3646 | IPv6 (DHCPv6) 动态主机配置协议的 DNS 配置选项 |
+
+
