@@ -202,6 +202,8 @@ CDN服务商通常通过域名请求者IP返回最近的节点，但CDN的DNS系
 
 因此Google、 OpenDNS联合草拟了一个相关的RFC草案来达到这个目的。https://tools.ietf.org/html/draft-vandergaast-edns-client-ip-01
 
+http://www.chinaz.com/news/2016/0826/572117.shtml
+
 ## 设计和实施 DNS 服务器和客户端服务时可能用到的RFC相关规范：
 
 | RFC | 标题 |
